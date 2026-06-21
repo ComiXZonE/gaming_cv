@@ -17,21 +17,7 @@
   {% endif %}
 
   {% for project in projects.assignments %}
-    <div class="item">
-
-      <span class="project-title">
-        {% if project.link %}
-        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-        {% else %}
-        {{ project.title }}
-        {% endif %}
-      </span>
-
-      {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
-      {% endif %}
-
-    </div><!--//item-->
+    <div class="item">{% if project.tagline %}&bull; <span class="project-tagline">{{ project.tagline }}</span>{% endif %}</div>
   {% endfor %}
 
 </section><!--//section-->

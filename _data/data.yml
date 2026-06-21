@@ -1,286 +1,111 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
 sidebar:
   position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
-  name: Alan Doe
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  name: Nikola Trifunovic
+  tagline: Game Programmer | UI & Engine Systems
 
   # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-  citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  email: trifunovic.nikola94@gmail.com
+  phone: +381 6435 44466
+  timezone: Serbia/Belgrade
+  linkedin: https://www.linkedin.com/in/nikola-trifunovic
 
   languages:
     title: Languages
     info:
-    - idiom: English
+    - idiom: Serbian
       level: Native
 
+    - idiom: English
+      level: Professional
+
     - idiom: French
-      level: Professional
-
-    - idiom: Spanish
-      level: Professional
-
-  interests:
-    title: Interests
-    info:
-    - item: Climbing
-      link:
-
-
-    - item: Snowboarding
-      link:
-
-
-    - item: Cooking
-      link:
-
+      level: Basic
 
 career-profile:
-  title: Career Profile
+  title: Summary
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Game programmer with AAA development experience at Ubisoft, credited on 3 shipped titles: Skull and Bones, Assassin's Creed Shadows and Assassin's Creed Black Flag Resynced, across PC, PlayStation 5 and Xbox Series X.
+    Specialized in C++ UI programming, gameplay systems and engine integration using Ubisoft's Anvil engine.
+    Background in real-time embedded systems strengthens expertise in memory optimization, performance-critical execution and cross-platform development.
+
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+  - degree: BSc in Computer Science and Information Technology
+    university: School of Electrical Engineering, University of Belgrade
+    time: 2013 - 2017
 
 experiences:
-  title: Experiences
+  title: Experience
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
+  - role: Senior Programmer
+    time: November 2024 - Present
+    company: Ubisoft, Belgrade
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
+      - Owned development of Animus Hub, a cross-title in-game portal unifying progression tracking, content discovery, upsell, preorder, and cross-launch for the Assassin's Creed franchise, shipped across AC Shadows and Black Flag Resynced
+      - Delivered 5 features end-to-end: boot flow, landing page with title roster and character visualization, per-title detail pages with adaptive content, video player and free weekend trial
+      - Designed the communication layer between Ultralight, a GPU-accelerated web UI renderer embedded in Ubisoft's Anvil engine and the game runtime: heartbeat timers, event dispatch, data exchange and state synchronization
+      - Implemented gameplay data pipelines to expose live game state to the UI layer, ensuring frame-budget-aware updates and minimal runtime overhead
+      - Mentored and onboarded 3 engineers on Anvil engine workflows and codebase conventions
+  - role: UI Programmer
+    time: January 2021 - November 2024
+    company: Ubisoft, Belgrade
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
+      - Developed the founding prototype of Animus Hub, establishing the initial system architecture and integration contracts that shaped its production
+      - Owned development of the Report Player feature and Maintenance mode for Skull and Bones: a screen blocking game access during server downtime with a live countdown to server availability
+      - Delivered cross-platform compatibility across PC, PlayStation 5 and Xbox Series X, including certification-compliant development for Google Stadia
+      - Implemented UI component logic in C++ within Ubisoft's Anvil engine, transforming gameplay state into compact, renderable data structures optimized for real-time frame execution
+      - Designed data contracts and integration workflows with art teams to streamline the UI content pipeline and reduce iteration overhead
+  - role: Automotive Embedded Software Engineer
+    time: October 2017 - December 2020
+    company: RT-RK, Belgrade
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-
-certifications:
-  title: Certifications
-  list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
+      - Built a CNN model conversion tool in Python to translate trained models into resource-efficient runtime interpreters for constrained embedded hardware (TI TDA2p ADAS SoC)
+      - Developed a memory and execution scheduler in C for the CNN runtime interpreter, managing layer-by-layer execution order and buffer allocation on constrained hardware
+      - Built video capture, storage and playback pipelines on Linux using a PCIe switch and ROS2 for generating computer vision training datasets
+      - Applied performance optimization and memory management techniques to meet hard real-time processing deadlines
+  - role: Intern
+    time: February 2017 - September 2017
+    company: RT-RK, Belgrade
     details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
+      - Optimized computer vision algorithms for embedded real-time execution on TI TDA2x ADAS SoC using DMA transfers and double-buffering
+      - Reduced integral image execution time from 23ms to 16ms per 720p frame through algorithmic and memory access pattern improvements
 
 projects:
-  title: Projects
-  intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  title: Relevant University Coursework
   assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
+  - tagline: "Multithreading kernel with time slicing and events support (C++)"
+  - tagline: "Indexed file allocation file system (akin to ext2) (C++)"
+  - tagline: "Two-pass assembler for a hypothetical 32-bit processor (C++)"
+  - tagline: "Web application for organizing and displaying data for various sports tournaments as part of Summer Olympics (Java Server Faces, Hibernate, MySQL)"
+  - tagline: "Application for management of a public/private keys repository, generation of certificate signing requests and X509 certificates (Java)"
 
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
-
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-publications:
-  title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
-  papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
-
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
-
-recommendations:
-  title: Recommendations
-  list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
-
-      He is a great employee!
-
-skills:
-  title: Skills &amp; Proficiency
+tools:
+  title: Tools
 
   toolset:
-  - name: Python & Django
-    level: 98%
+  - name: "C++ (primary language, 7+ years)"
+  - name: "Ubisoft Anvil Engine"
+  - name: "C, Python"
+  - name: "Visual Studio, Perforce, Git"
+  - name: "Cross-platform: PC, PlayStation 5, Xbox Series X"
+  - name: "Windows, Linux"
+  - name: "ROS2"
 
-  - name: Javascript & jQuery
-    level: 98%
 
-  - name: Angular
-    level: 98%
+skills:
+  title: Skills
 
-  - name: HTML5 & CSS
-    level: 95%
-
-  - name: Ruby on Rails
-    level: 85%
-
-  - name: Sketch & Photoshop
-    level: 60%
+  skillset:
+  - description: "Technical communication and stakeholder alignment across programmer, artist and producer roles"
+  - description: "Cross-platform and console development (PC, PS5, Xbox Series X)"
+  - description: "C++ game systems programming and Anvil engine integration"
+  - description: "UI programming and gameplay state management"
+  - description: "Real-time performance optimization and memory management"
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

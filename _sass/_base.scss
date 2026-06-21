@@ -186,10 +186,10 @@ p {
   }
   .upper-row,
   .second-upper-row {
-    position: relative;
-    overflow: hidden;
     margin-bottom: 2px;
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
   .job-title,
   .degree,
@@ -200,16 +200,15 @@ p {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
-    flex: 75%;
+    flex: 1;
   }
 
   .time,
   .cert-url {
-    position: absolute;
-    right: 0;
-    top: 0;
     color: $text-grey;
-    flex: 25%;
+    flex-shrink: 0;
+    margin-left: 15px;
+    white-space: nowrap;
   }
   .company,
   .recommendation-role,
@@ -231,7 +230,7 @@ p {
       margin-bottom: 30px;
     }
     .item {
-      margin-bottom: 15px;
+      margin-bottom: 3px;
     }
   }
   .oss-section {
@@ -266,7 +265,7 @@ p {
 
 .skillset {
   .item {
-    margin-bottom: 15px;
+    margin-bottom: 3px;
     overflow: hidden;
   }
   .level-title {
