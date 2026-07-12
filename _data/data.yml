@@ -5,7 +5,7 @@ sidebar:
 
   # Profile information
   name: Nikola Trifunovic
-  tagline: Game Programmer | UI & Engine Systems
+  tagline: Embedded Software Engineer | Real-Time Systems
 
   # Sidebar links
   email: trifunovic.nikola94@gmail.com
@@ -28,9 +28,9 @@ sidebar:
 career-profile:
   title: Summary
   summary: |
-    Game programmer with AAA development experience at Ubisoft, credited on 3 shipped titles: Skull and Bones, Assassin's Creed Shadows and Assassin's Creed Black Flag Resynced, across PC, PlayStation 5 and Xbox Series X.
-    Specialized in C++ UI programming, gameplay systems and engine integration using Ubisoft's Anvil engine.
-    Background in real-time embedded systems strengthens expertise in memory optimization, performance-critical execution and cross-platform development.
+    Embedded software engineer with experience in real-time systems, C++ development and performance-critical execution.
+    Background spans constrained embedded hardware (ADAS SoCs), CNN runtime development, and large-scale game engine systems, all sharing a common thread: predictable, low-latency execution under tight resource constraints.
+    Experienced in memory management, real-time scheduling, cross-platform development and integrating software layers across hardware and application boundaries.
 
 education:
   title: Education
@@ -46,34 +46,36 @@ experiences:
     time: November 2024 - Present
     company: Ubisoft, Belgrade
     details: |
-      - Owned development of Animus Hub, a cross-title in-game portal unifying progression tracking, content discovery, upsell, preorder, and cross-launch for the Assassin's Creed franchise, shipped across AC Shadows and Black Flag Resynced
-      - Delivered 5 features end-to-end: boot flow, landing page with title roster and character visualization, per-title detail pages with adaptive content, video player and free weekend trial
-      - Designed the communication layer between Ultralight, a GPU-accelerated web UI renderer embedded in Ubisoft's Anvil engine and the game runtime: heartbeat timers, event dispatch, data exchange and state synchronization
-      - Implemented gameplay data pipelines to expose live game state to the UI layer, ensuring frame-budget-aware updates and minimal runtime overhead
-      - Mentored and onboarded 3 engineers on Anvil engine workflows and codebase conventions
+      - Shipped Animus Hub across Assassin's Creed Shadows and Black Flag Resynced, a cross-title in-game portal unifying progression tracking, content discovery, upsell and preorder flows
+      - Implemented the IPC layer between Ultralight (a GPU-accelerated renderer embedded in Ubisoft's Anvil engine) and the game runtime: heartbeat timers, event dispatch, bidirectional data exchange and state synchronization
+      - Built real-time data pipelines exposing live game state to the UI layer, with minimal per-frame overhead
+      - Owned end-to-end delivery of features within a multi-platform runtime environment (PC, PS5, Xbox Series X)
+      - Mentored and onboarded engineers on engine workflows and codebase conventions
   - role: UI Programmer
     time: January 2021 - November 2024
     company: Ubisoft, Belgrade
     details: |
-      - Developed the founding prototype of Animus Hub, establishing the initial system architecture and integration contracts that shaped its production
-      - Owned development of the Report Player feature and Maintenance mode for Skull and Bones: a screen blocking game access during server downtime with a live countdown to server availability
-      - Delivered cross-platform compatibility across PC, PlayStation 5 and Xbox Series X, including certification-compliant development for Google Stadia
-      - Implemented UI component logic in C++ within Ubisoft's Anvil engine, transforming gameplay state into compact, renderable data structures optimized for real-time frame execution
-      - Designed data contracts and integration workflows with art teams to streamline the UI content pipeline and reduce iteration overhead
-  - role: Automotive Embedded Software Engineer
+      - Developed the founding prototype of Animus Hub, defining the initial system architecture and cross-subsystem integration contracts that shaped its production design
+      - Implemented C++ component logic within Ubisoft's Anvil engine, transforming gameplay state into compact data structures optimized for real-time, frame-budget-aware execution
+      - Delivered and maintained cross-platform compatibility across PC, PS5, Xbox Series X and Google Stadia, meeting platform certification requirements for each target
+      - Owned the Maintenance mode feature for Skull and Bones: a runtime state machine blocking game access during server downtime with live countdown to service restoration
+      - Defined data contracts and integration protocols with art teams, reducing pipeline friction and iteration overhead across a multi-discipline production team
+  - role: Embedded Software Engineer
     time: October 2017 - December 2020
     company: RT-RK, Belgrade
     details: |
-      - Built a CNN model conversion tool in Python to translate trained models into resource-efficient runtime interpreters for constrained embedded hardware (TI TDA2p ADAS SoC)
-      - Developed a memory and execution scheduler in C for the CNN runtime interpreter, managing layer-by-layer execution order and buffer allocation on constrained hardware
-      - Built video capture, storage and playback pipelines on Linux using a PCIe switch and ROS2 for generating computer vision training datasets
-      - Applied performance optimization and memory management techniques to meet hard real-time processing deadlines
+      - Built a Caffe model conversion pipeline in Python for a proprietary neural network accelerator, reduced models to hardware-supported node types and fused operation sequences (convolution, pooling, ReLU) into single accelerator cycles
+      - Developed an execution and memory scheduler in C that resolved layer-by-layer execution order and address-mapped buffer assignments into a custom binary, flashed via ARM core and consumed by the board's accelerator
+      - Built video capture and storage pipelines on embedded Linux using a Switchtec PCIe switch, hot-swappable SSD rack and ROS2; recorded multi-modal video and CAN bus streams for computer vision training datasets
+      - Participated in bringup of the video capture board, read the Switchtec PCIe switch datasheet to verify pin configuration for optimal lane assignment and validated software-side device enumeration and configuration
+      - Reduced integral image execution time from 23ms to 16ms per 720p frame on TI TDA2x ADAS SoC through algorithmic and memory access pattern improvements
   - role: Intern
     time: February 2017 - September 2017
     company: RT-RK, Belgrade
     details: |
-      - Optimized computer vision algorithms for embedded real-time execution on TI TDA2x ADAS SoC using DMA transfers and double-buffering
-      - Reduced integral image execution time from 23ms to 16ms per 720p frame through algorithmic and memory access pattern improvements
+      - Completed BSc thesis on optimization of program execution on TI C66x DSP using the Enhanced DMA Controller
+      - Interfaced with the development board via UART and utilized JTAG for on-target debugging
+      - Introduced to embedded development on TI TDA2x ADAS SoC via TI VisionSDK; learned DMA-based optimization techniques and double-buffering patterns
 
 projects:
   title: Relevant University Coursework
@@ -88,24 +90,26 @@ tools:
   title: Tools
 
   toolset:
-  - name: "C++ (primary language, 7+ years)"
-  - name: "Ubisoft Anvil Engine"
+  - name: "C++ (primary language, 5+ years)"
   - name: "C, Python"
+  - name: "Windows, Linux"
+  - name: "ROS2, Embedded Linux"
+  - name: "TI VisionSDK"
+  - name: "JTAG, UART"
   - name: "Visual Studio, Perforce, Git"
   - name: "Cross-platform: PC, PlayStation 5, Xbox Series X"
-  - name: "Windows, Linux"
-  - name: "ROS2"
+  - name: "Ubisoft Anvil Engine"
 
 
 skills:
   title: Skills
 
   skillset:
-  - description: "Technical communication and stakeholder alignment across programmer, artist and producer roles"
-  - description: "Cross-platform and console development (PC, PS5, Xbox Series X)"
-  - description: "C++ game systems programming and Anvil engine integration"
-  - description: "UI programming and gameplay state management"
-  - description: "Real-time performance optimization and memory management"
+  - description: "Real-time performance optimization and memory management on constrained hardware"
+  - description: "Embedded systems development: scheduling, IPC, hardware abstraction and integration across software/hardware boundaries"
+  - description: "Cross-platform development (PC, PS5, Xbox Series X, Linux, embedded SoCs)"
+  - description: "C++ systems programming: data pipelines, runtime state machines, communication layers"
+  - description: "Technical communication and cross-discipline collaboration across programmer, artist and producer roles"
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
