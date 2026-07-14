@@ -66,7 +66,7 @@ experiences:
     details: |
       - Built a Caffe model conversion pipeline in Python for a proprietary neural network accelerator, reduced models to hardware-supported node types and fused operation sequences (convolution, pooling, ReLU) into single accelerator cycles
       - Developed an execution and memory scheduler in C that resolved layer-by-layer execution order and address-mapped buffer assignments into a custom binary, flashed via ARM core and consumed by the board's accelerator
-      - Built video capture and storage pipelines on embedded Linux using a Switchtec PCIe switch, hot-swappable SSD rack and ROS2; recorded multi-modal video and CAN bus streams for computer vision training datasets
+      - Built video capture and storage pipelines on embedded Linux using a Switchtec PCIe switch, hot-swappable SSD rack and ROS2, recorded multi-modal video and CAN bus streams for computer vision training datasets
       - Participated in bringup of the video capture board, read the Switchtec PCIe switch datasheet to verify pin configuration for optimal lane assignment and validated software-side device enumeration and configuration
       - Reduced integral image execution time from 23ms to 16ms per 720p frame on TI TDA2x ADAS SoC through algorithmic and memory access pattern improvements
   - role: Intern
@@ -92,10 +92,12 @@ tools:
   toolset:
   - name: "C++ (primary language, 5+ years)"
   - name: "C, Python"
-  - name: "Windows, Linux"
-  - name: "ROS2, Embedded Linux"
-  - name: "TI VisionSDK"
+  - name: "TI TDA2x ADAS SoC, TI VisionSDK"
+  - name: "PCIe, CAN"
+  - name: "Embedded Linux, ROS2"
   - name: "JTAG, UART"
+  - name: "Familiarity with CUDA"
+  - name: "Windows, Linux"
   - name: "Visual Studio, Perforce, Git"
   - name: "Cross-platform: PC, PlayStation 5, Xbox Series X"
   - name: "Ubisoft Anvil Engine"
