@@ -17,7 +17,7 @@
   {% endif %}
 
   {% for project in projects.assignments %}
-    <div class="item">{% if project.tagline %}&bull; <span class="project-tagline">{{ project.tagline }}</span>{% endif %}</div>
+    <div class="item" style="display:flex;align-items:baseline;gap:0.4em;">{% if project.tagline %}<span style="flex-shrink:0;">&bull;</span><span class="project-tagline">{{ project.tagline }}</span>{% endif %}</div>
   {% endfor %}
 
 </section><!--//section-->
