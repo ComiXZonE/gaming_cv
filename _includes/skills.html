@@ -10,7 +10,7 @@
 
   <div class="skillset">
     {% for skill in skills.skillset %}
-    {% if skill.description %}<div class="item">&bull; <span class="skill-description">{{ skill.description }}</span></div>{% endif %}
+    {% if skill.description %}<div class="item" style="display:flex;align-items:baseline;gap:0.4em;"><span style="flex-shrink:0;">&bull;</span><span class="skill-description">{{ skill.description }}</span></div>{% endif %}
   {% endfor %}
   </div>
 </section>
