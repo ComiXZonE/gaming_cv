@@ -28,9 +28,10 @@ sidebar:
 career-profile:
   title: Summary
   summary: |
-    Embedded software engineer with experience in real-time systems, C++ development and performance-critical execution.
+    Senior C++ software engineer with embedded and real-time systems experience.
     Background spans constrained embedded hardware (ADAS SoCs), CNN runtime development, and large-scale game engine systems, all sharing a common thread: predictable, low-latency execution under tight resource constraints.
-    Experienced in memory management, real-time scheduling, cross-platform development and integrating software layers across hardware and application boundaries.
+    Experienced in memory management, execution scheduling, cross-platform development and integrating software layers across hardware and application boundaries.
+    Hands-on with automated testing: pytest unit tests for critical-path logic and nightly regression runs of a release against expected results.
 
 education:
   title: Education
@@ -66,7 +67,9 @@ experiences:
     details: |
       - Built a Caffe model conversion pipeline in Python for a proprietary neural network accelerator, reduced models to hardware-supported node types and fused operation sequences (convolution, pooling, ReLU) into single accelerator cycles
       - Developed an execution and memory scheduler in C that resolved layer-by-layer execution order and address-mapped buffer assignments into a custom binary, flashed via ARM core and consumed by the board's accelerator
-      - Built video capture and storage pipelines on embedded Linux using a Switchtec PCIe switch, hot-swappable SSD rack and ROS2, recorded multi-modal video and CAN bus streams for computer vision training datasets
+      - Wrote pytest unit tests for critical-path methods of the conversion tool, using mock input data with expected outputs to validate correctness
+      - Took part in a rotating duty maintaining the team's nightly Jenkins regression pipeline, which built the conversion tool release and validated it against a suite of neural networks by comparing outputs to expected results
+      - Built video capture and storage pipelines on embedded Linux using a Switchtec PCIe switch, hot-swappable SSD rack and ROS2, recorded multi-modal video and CAN bus streams for automotive computer vision training datasets
       - Participated in bringup of the video capture board, read the Switchtec PCIe switch datasheet to verify pin configuration for optimal lane assignment and validated software-side device enumeration and configuration
       - Reduced integral image execution time from 23ms to 16ms per 720p frame on TI TDA2x ADAS SoC through algorithmic and memory access pattern improvements
   - role: Intern
@@ -75,7 +78,7 @@ experiences:
     details: |
       - Completed BSc thesis on optimization of program execution on TI C66x DSP using the Enhanced DMA Controller
       - Interfaced with the development board via UART and utilized JTAG for on-target debugging
-      - Introduced to embedded development on TI TDA2x ADAS SoC via TI VisionSDK; learned DMA-based optimization techniques and double-buffering patterns
+      - Introduced to embedded development on TI TDA2x ADAS SoC via TI VisionSDK, learned DMA-based optimization techniques and double-buffering patterns
 
 projects:
   title: Relevant University Coursework
@@ -92,6 +95,7 @@ tools:
   toolset:
   - name: "C++ (primary language, 5+ years)"
   - name: "C, Python"
+  - name: "pytest, Jenkins"
   - name: "TI TDA2x ADAS SoC, TI VisionSDK"
   - name: "PCIe, CAN"
   - name: "Embedded Linux, ROS2"
@@ -108,7 +112,8 @@ skills:
 
   skillset:
   - description: "Real-time performance optimization and memory management on constrained hardware"
-  - description: "Embedded systems development: scheduling, IPC, hardware abstraction and integration across software/hardware boundaries"
+  - description: "Embedded systems development: scheduling, IPC and integration across software/hardware boundaries"
+  - description: "Automated testing and verification: pytest unit tests for critical-path logic, nightly Jenkins regression runs against expected results"
   - description: "Cross-platform development (PC, PS5, Xbox Series X, Linux, embedded SoCs)"
   - description: "C++ systems programming: data pipelines, runtime state machines, communication layers"
   - description: "Technical communication and cross-discipline collaboration across programmer, artist and producer roles"
